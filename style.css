@@ -1,0 +1,122 @@
+:root {
+  --background-color: white;
+  --accent-color: #F64747;
+  --text-accent-color: #FFB347;
+  --text-color: #930b0b;
+  --emergency-color: #990000;
+  --emergency-text-color: white;
+
+  --title-font-size: 20px;
+  --caption-font-size: 15px;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  color: var(--text-color);
+}
+
+h1, .divTitle {
+  font-size: var(--title-font-size);
+}
+
+#searchDiv {
+  font-size: 10px;
+}
+
+#searchBar {
+  width: 80%;
+  border: 2px solid var(--accent-color);
+}
+
+.textButton {
+  text-decoration: underline;
+}
+
+.textButton:hover, #closeButton:hover, #emergencyButton:hover, .abutton:hover {
+  cursor: pointer;
+}
+
+.article {
+  position: relative;
+  width: 200px;
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  height: 350px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.divTitle {
+  color: var(--text-accent-color);
+}
+
+#infoDiv {
+  z-index: 3;
+	position: absolute;
+	width: 50%;
+  height: 600px;
+  overflow: scroll;
+	text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  border: 2px solid var(--accent-color);
+}
+
+li, p, .divCaption {
+  font-size: var(--caption-font-size);
+}
+
+ul {
+  list-style-position: inside;
+  text-align: left;
+}
+
+#infoDiv > ul {
+  margin-left: 25%;
+}
+
+#bodyDiv {
+  position: relative;
+  z-index: 1;
+}
+
+#navbar {
+  background-color: var(--accent-color);
+  width: 100%;
+  top: 0;
+  height: 30px;
+  padding-top: 7px;
+}
+
+a {
+  color: var(--text-accent-color);
+}
+
+#closeButton {
+  text-align: right;
+  margin: auto 10px -40px auto;
+  font-size: 30px;
+}
+
+#emergencyButtonDiv {
+  background-color: var(--emergency-color);
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+#emergencyButton {
+  color: var(--emergency-text-color);
+  text-decoration: none;  
+}
+
+.abutton {
+  margin: 10px;
+  text-decoration: none;
+}
