@@ -1,0 +1,44 @@
+:root {
+  --background-color: #c6edf0;
+  --accent-color: #7bb9c8;
+  --text-accent-color: #112149;
+  --text-color: #112149;
+  --emergency-color: #da8048;
+  --emergency-text-color: white;
+
+  --title-font-size: 5vw;
+  --caption-font-size: 4vw;
+}
+
+.article {
+  position: relative;
+  width: 200px;
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  height: 350px;
+  display: inline-block;
+  margin: 5px;
+  vertical-align: top;
+}
+
+#infoDiv {
+  z-index: 3;
+	position: absolute;
+	width: 90vw;
+  height: 600px;
+  overflow: scroll;
+	text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  border: 2px solid var(--accent-color);
+}
+
+#mobileNavBar {
+  display: none;
+}
+
+#emergencyButtonDiv {
+  margin: 85vh 65vw;
+}

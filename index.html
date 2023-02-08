@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang='en-US'>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Project: Poppy</title>
-  <link href="style.css" rel="stylesheet" media="screen and (min-width: 361px)" type="text/css" />
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-  <link rel="stylesheet" media="screen and (max-width: 360px)" href="mobile.css">
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width'>
+  <link rel="icon" href="/img/icon/favicon.ico" sizes="any">
+  <title>The Poppy Protocol</title>
+  <link href='global.css' rel='stylesheet' type='text/css' />
+  <link href='desktop.css' rel='stylesheet' media='screen and (min-width: 800px)' type='text/css'/>
+  <link href='mobile.css' rel='stylesheet' media='screen and (max-width: 800px)' type='text/css'/>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
     <p id='emergencyButton'>HELP!</p>
   </div>
   <div id='headerDiv'>
-    <h1>The Poppy Project</h1>
+    <h1>The Poppy Protocol</h1>
   </div>
   <div id='searchDiv'>
     <h3>Quick Search</h3>
@@ -28,6 +29,11 @@
     <h4>Type a symptom, drug, a side effect, etc.</h4>
   </div>
   <div id='bodyDiv'>
+  </div>
+  <div id='mobileNavBar'>
+    <a class='imgButton' onclick='history.back()'><img src='img/icon/backButton.png'></a>
+    <a class='imgButton' href='index.html'><img src='img/icon/homeButton.png'></a>
+    <a class='imgButton' href='emergency.html'><img src='img/icon/hotlineButton.png'></a>
   </div>
   <script src='/src/drugs.js'></script>
 </body>

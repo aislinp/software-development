@@ -1,0 +1,56 @@
+.article {
+  position: relative;
+  width: 70vw;
+  border: 10px solid var(--accent-color);
+  border-radius: 5px;
+  height: 20vw;
+  display: inline-block;
+  margin: 5px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.article:hover {
+  cursor: pointer;
+}
+
+#infoDiv {
+  z-index: 3;
+	position: absolute;
+	width: 90vw;
+  height: 600px;
+  overflow: scroll;
+	text-align: center;
+  background-color: var(--background-color);
+  border: 2px solid var(--accent-color);
+}
+
+#mobileNavBar {
+  background-color: var(--accent-color);
+  width: 100%;
+  top: 90vh;
+  height: 10vh;
+  position: fixed;
+  z-index: 2;
+}
+
+#mobileNavBar > a > img {
+  width: 8vh;
+  margin: 1vh 6vw 0 6vw;
+}
+
+#emergencyButtonDiv {
+  margin: 78vh 65vw;
+}
+
+.article > img {
+  height: 20vw;
+  float: right;
+  margin-top: -17.75vw;
+}
+
+.divTitle {
+  font-size: 5vw;
+  text-decoration: none;
+  margin-top: 6.5vw;
+}

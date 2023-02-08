@@ -10,7 +10,8 @@ let drugs = {
     {'name': 'DMT', 'fullName': 'N-Dimethyltryptamine', 'effects': ['rush', 'euphoria', 'changes in mood', 'increased sensitivity', 'fast heartbeat', 'increased blood pressure', 'dilated pupils', 'visual hallucinations', 'dissociation'], 'signs': ['anxiety', 'delusions', 'psychosis', 'hallucinations', 'paranoia'], 'appearance': ['white powder', 'crystalline']},
     {'name': 'Mescaline', 'fullName': '5-trimethoxyphenethylamine', 'effects': ['euphoria', 'increased energy', 'space distortion', 'time distortion', 'trouble concentrating', 'trouble thinking', 'increased blood pressure', 'fast heartbeat', 'intense nausea', 'vomiting'], 'signs': ['overdoses are rare.'], 'appearance': ['powder', 'tablet', 'capsule', 'liquid']},
     {'name': 'NBOMes', 'fullName': '25-NB', 'effects': ['visual hallucinations', 'auditory hallucinations', 'euphoria', 'sweating', 'confusion', 'memory issues', 'increased blood pressure', 'fast heartbeat', 'paranoia'], 'signs': ['intense confusion', 'agitation', 'seizure', 'kidney failure', 'nausea', 'vomiting', 'overheating', 'coma'], 'appearance': ['blotters', 'liquid', 'powder', 'pill']},
-    {'name': 'Salvia', 'fullName': 'Saliva divinorum', 'effects': ['anxiety', 'amnesia', 'hallucinations', 'sedation', 'low energy', 'pain relief', 'confusion', 'delusion', 'visual distortions', 'laughter', 'time distortion'], 'signs': ['overdoses are rare.'], 'appearance': ['fresh leaves', 'dried leaves']}
+    {'name': 'Salvia', 'fullName': 'Saliva divinorum', 'effects': ['anxiety', 'amnesia', 'hallucinations', 'sedation', 'low energy', 'pain relief', 'confusion', 'delusion', 'visual distortions', 'laughter', 'time distortion'], 'signs': ['overdoses are rare.'], 'appearance': ['fresh leaves', 'dried leaves']},
+    {'name': 'Ayahuasca', 'fullName': 'Banisteriopsis caapi', 'effects': ['nausea', 'vomiting', 'euphoria', 'increased blood pressure', 'fast heartbeat', 'visual hallucinations', 'auditory hallucinations', 'anxiety'], 'signs': ['signs', 'of', 'overdose'], 'appearance': ['Ayahuasca is a brown-reddish drink with strong taste and smell'], 'category': 'category'}
   ]
 };
 
@@ -24,7 +25,6 @@ for (let i = 0; i < drugs.drugs.length; i++) {
 
   let container = document.createElement('DIV');
   let title = document.createElement('P');
-  let caption = document.createElement('P');
   let photo = document.createElement('IMG');
 
   let searchQueries = [];
@@ -50,20 +50,23 @@ for (let i = 0; i < drugs.drugs.length; i++) {
     buildInfoDiv(drug);
   });
 
-  caption.innerText = 'Appearance, dangers, and symptoms';
-  caption.classList.add('divCaption');
-
   photo.src = `/img/${drug.name.replace(/\s/g, '')}.png`;
   photo.classList.add('articleIMG');
 
   container.appendChild(title);
-  container.appendChild(caption);
   container.appendChild(photo);
 
   document.getElementById('bodyDiv').appendChild(container);
 }
 
 function buildInfoDiv(drug) {
+  var marginMultiplier;
+  for (marginMultiplier = 0; marginMultiplier < drugs.drugs.length; marginMultiplier++) {
+    if (drugs.drugs[marginMultiplier].name == drug.name) {
+      break;
+    }
+  }
+  
   if (document.getElementById('infoDiv')) document.getElementById('infoDiv').remove();
   
   let container = document.createElement('DIV');
@@ -79,6 +82,7 @@ function buildInfoDiv(drug) {
   let appearances = document.createElement('UL');
 
   container.id = 'infoDiv';
+  container.style.marginTop = `${(-1 / marginMultiplier) * 100}px`;
 
   closeButton.innerHTML = '&times;';
   closeButton.id = 'closeButton';

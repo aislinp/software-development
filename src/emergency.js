@@ -21,7 +21,7 @@ function filterLocation(filter) {
 
 var reverseGeocoder = new BDCReverseGeocode();
 reverseGeocoder.getClientLocation(function(result) {
-  if (!result.countryCode == 'US') {
+  if (result.countryCode != 'US') {
     return
   }
   filterLocation(result.principalSubdivision);
