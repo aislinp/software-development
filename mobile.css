@@ -60,3 +60,11 @@
 .noMobile {
   display: none;
 }
+
+.hotline > .divTitle {
+  font-size: 3vw;
+}
+
+.hotline > .callLink {
+  font-size: 2.5vw;
+}
