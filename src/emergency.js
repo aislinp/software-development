@@ -75,11 +75,14 @@ for (let i = 0; i < hotlines.list.length; i++) {
 
   alwaysOpen.innerText = currentHotline['247'] ? 'Always Open' : `Hours: ${currentHotline['hours']}`;
   location.innerText = currentHotline['national'] ? 'Location: National' : `Location: ${currentHotline['location']}`;
-
+  
   infoList.appendChild(alwaysOpen);
   infoList.appendChild(location);
+  infoList.classList.add('noMobile');
 
   featuresLabel.innerText = 'What they can help you with:';
+  featuresLabel.classList.add('noMobile');
+  featuresList.classList.add('noMobile');
   for (let j = 0; j < currentHotline['features'].length; j++) {
     let feature = document.createElement('LI');
     feature.innerText = currentHotline['features'][j];

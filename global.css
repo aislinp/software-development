@@ -79,7 +79,7 @@ h1 > a {
 }
 
 li, p, .divCaption {
-  font-size: var(--caption-font-size);
+  font-size: 1.25vh;
 }
 
 ul {

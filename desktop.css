@@ -6,16 +6,16 @@
   --emergency-color: #da8048;
   --emergency-text-color: white;
 
-  --title-font-size: 5vw;
-  --caption-font-size: 4vw;
+  --title-font-size: 5vh;
+  --caption-font-size: 4vh;
 }
 
 .article {
   position: relative;
-  width: 20vw;
+  width: 20vh;
   border: 2px solid var(--accent-color);
   border-radius: 5px;
-  height: 350px;
+  height: 25vh;
   display: inline-block;
   margin: 5px;
   vertical-align: top;
@@ -24,7 +24,7 @@
 #infoDiv {
   z-index: 3;
 	position: absolute;
-	width: 90vw;
+	width: 90vh;
   height: 600px;
   overflow: scroll;
 	text-align: center;
@@ -49,13 +49,17 @@
 }
 
 #emergencyButtonDiv {
-  margin: 85vh 65vw;
+  margin: 85vh 65vh;
 }
 
 .divTitle {
-  font-size: 2vw;
+  font-size: 2vh;
 }
 
 .article > img {
-  width: 18vw;
+  width: 18vh;
+}
+
+.noMobile {
+  font-size: 1vh;
 }
