@@ -23,6 +23,7 @@
 	text-align: center;
   background-color: var(--background-color);
   border: 2px solid var(--accent-color);
+  margin-left: 5vw;
 }
 
 #mobileNavBar {

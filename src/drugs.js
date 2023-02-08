@@ -82,7 +82,6 @@ function buildInfoDiv(drug) {
   let appearances = document.createElement('UL');
 
   container.id = 'infoDiv';
-  container.style.marginTop = `${(-1 / marginMultiplier) * 100}px`;
 
   closeButton.innerHTML = '&times;';
   closeButton.id = 'closeButton';
@@ -147,7 +146,7 @@ function buildInfoDiv(drug) {
     }
   });
 
-  document.getElementById('bodyDiv').appendChild(container);
+  document.getElementById('bodyDiv').insertBefore(container, document.getElementById('bodyDiv').childNodes[marginMultiplier])
 }
 
 let searchDrugs = document.getElementById('searchBar');
