@@ -8,6 +8,7 @@
   margin: 5px;
   vertical-align: top;
   text-align: left;
+  padding-left: 10px;
 }
 
 .article:hover {
@@ -51,7 +52,7 @@
 }
 
 .divTitle {
-  font-size: 5vw;
+  font-size: 4.8vw;
   text-decoration: none;
   margin-top: 6.5vw;
 }

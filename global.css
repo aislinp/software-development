@@ -35,6 +35,10 @@ h1, .divTitle {
   font-size: var(--title-font-size);
 }
 
+h1 > a {
+  text-decoration: none;
+}
+
 #searchDiv {
   font-size: 10px;
 }

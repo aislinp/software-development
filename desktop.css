@@ -12,7 +12,7 @@
 
 .article {
   position: relative;
-  width: 200px;
+  width: 20vw;
   border: 2px solid var(--accent-color);
   border-radius: 5px;
   height: 350px;
@@ -39,6 +39,23 @@
   display: none;
 }
 
+#navbar {
+  background-color: var(--accent-color);
+  width: 100%;
+  top: 0;
+  height: 5vh;
+  padding-top: 1vh;
+  font-size: 3vh;
+}
+
 #emergencyButtonDiv {
   margin: 85vh 65vw;
+}
+
+.divTitle {
+  font-size: 2vw;
+}
+
+.article > img {
+  width: 18vw;
 }
