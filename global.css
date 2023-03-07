@@ -6,13 +6,13 @@
   --emergency-color: #da8048;
   --emergency-text-color: white;
 
-  --title-font-size: 5vw;
-  --caption-font-size: 4vw;
+  --title-font-size: 5vh;
+  --caption-font-size: 4vh;
 }
 
 @font-face {
-  font-family: feather;
-  src: url(/fonts/feather.ttf);
+  font-family: Feather;
+  src: url(/fonts/Feather.ttf);
 }
 
 @font-face {
@@ -31,9 +31,16 @@ html, body {
 }
 
 h1, .divTitle {
-  font-family: 'feather', sans-serif;
-  font-size: var(--title-font-size);
+  font-family: 'Feather', sans-serif;
 }
+
+.article {
+  position: relative;
+  border-radius: 5px;
+  vertical-align: top;
+  display: inline-block;
+}
+
 
 h1 > a {
   text-decoration: none;
@@ -79,10 +86,10 @@ h1 > a {
 }
 
 li, p, .divCaption {
-  font-size: 1.25vh;
+  font-size: 1.5vh;
 }
 
-ul {
+ul, ol {
   list-style-position: inside;
   text-align: left;
 }
@@ -100,9 +107,6 @@ ul {
   background-color: var(--accent-color);
   width: 100%;
   top: 0;
-  height: 7vw;
-  padding-top: 1vw;
-  font-size: 4vw;
 }
 
 a {
@@ -118,4 +122,8 @@ a {
 .abutton {
   margin: 10px;
   text-decoration: none;
+}
+
+.cite {
+  font-size: 1vh;
 }

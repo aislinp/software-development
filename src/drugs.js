@@ -1,18 +1,33 @@
 /*
-{'name': 'Name': 'fullName': 'scientific name', 'effects': ['side', 'effects'], 'signs': ['signs', 'of', 'overdose'], 'appearance': ['what', 'it', 'looks', 'like']},
-{'name': 'Name': 'fullName': 'scientific name', 'effects': ['side', 'effects'], 'signs': ['signs', 'of', 'overdose'], 'appearance': ['what', 'it', 'looks', 'like'], 'category': 'category'}
+{'name': 'Name', 'fullName': 'scientific name', 'effects': ['side', 'effects'], 'signs': ['signs', 'of', 'overdose'], 'appearance': ['what', 'it', 'looks', 'like']},
+{'name': 'Name', 'fullName': 'scientific name', 'effects': ['side', 'effects'], 'signs': ['signs', 'of', 'overdose'], 'appearance': ['what', 'it', 'looks', 'like'], 'category': 'category'}
 */
 
 let drugs = {
   'drugs': [
     {'name': 'LSD', 'fullName': 'lysergic acid diethylamide', 'effects': ['changes in perception', 'changes in mood', 'changes in thought', 'hallucinations', 'space distortion', 'time distortion'], 'signs': ['euphoria', 'pupil dilation', 'visual hallucinations', 'auditory hallucinations', 'confusion', 'trouble concentrating', 'headaches', 'nausea', 'fast heartbeat', 'irregular heartbeat', 'increased body temperature', 'fast breathing', 'vomiting', 'facial flushes', 'sweating', 'chills'], 'appearance': ['tabs', 'liquid', 'gelatin sheets', 'capsules'], 'category': 'psychedelic'},
     {'name': 'Magic Mushrooms', 'fullName': 'psilocybin', 'effects': ['euphoria', 'altered visuals', 'time distortion', 'mild nausea', 'sweating', 'auditory hallucinations', 'visual hallucinations', 'space distortion'], 'signs': ['anxiety', 'paranoia', 'delusions'], 'appearance': ['mushrooms with a cap and a long stem', 'gray', 'brown', 'white', 'tan', 'white powder', 'dried mushrooms'], 'category': 'psychedelic'},
-    {'name': 'DMT', 'fullName': 'N-Dimethyltryptamine', 'effects': ['rush', 'euphoria', 'changes in mood', 'increased sensitivity', 'fast heartbeat', 'increased blood pressure', 'dilated pupils', 'visual hallucinations', 'dissociation'], 'signs': ['anxiety', 'delusions', 'psychosis', 'hallucinations', 'paranoia'], 'appearance': ['white powder', 'crystalline']},
-    {'name': 'Mescaline', 'fullName': '5-trimethoxyphenethylamine', 'effects': ['euphoria', 'increased energy', 'space distortion', 'time distortion', 'trouble concentrating', 'trouble thinking', 'increased blood pressure', 'fast heartbeat', 'intense nausea', 'vomiting'], 'signs': ['overdoses are rare.'], 'appearance': ['powder', 'tablet', 'capsule', 'liquid']},
-    {'name': 'NBOMes', 'fullName': '25-NB', 'effects': ['visual hallucinations', 'auditory hallucinations', 'euphoria', 'sweating', 'confusion', 'memory issues', 'increased blood pressure', 'fast heartbeat', 'paranoia'], 'signs': ['intense confusion', 'agitation', 'seizure', 'kidney failure', 'nausea', 'vomiting', 'overheating', 'coma'], 'appearance': ['blotters', 'liquid', 'powder', 'pill']},
-    {'name': 'Salvia', 'fullName': 'Saliva divinorum', 'effects': ['anxiety', 'amnesia', 'hallucinations', 'sedation', 'low energy', 'pain relief', 'confusion', 'delusion', 'visual distortions', 'laughter', 'time distortion'], 'signs': ['overdoses are rare.'], 'appearance': ['fresh leaves', 'dried leaves']},
-    {'name': 'Ayahuasca', 'fullName': 'Banisteriopsis caapi', 'effects': ['nausea', 'vomiting', 'euphoria', 'increased blood pressure', 'fast heartbeat', 'visual hallucinations', 'auditory hallucinations', 'anxiety'], 'signs': ['signs', 'of', 'overdose'], 'appearance': ['Ayahuasca is a brown-reddish drink with strong taste and smell'], 'category': 'category'}
-  ]
+    {'name': 'DMT', 'fullName': 'N,N-Dimethyltryptamine', 'effects': ['rush', 'euphoria', 'changes in mood', 'increased sensitivity', 'fast heartbeat', 'increased blood pressure', 'dilated pupils', 'visual hallucinations', 'dissociation'], 'signs': ['anxiety', 'delusions', 'psychosis', 'hallucinations', 'paranoia'], 'appearance': ['white powder', 'crystalline'], 'category': 'psychedelic'},
+    {'name': 'Mescaline', 'fullName': '3,4,5-trimethoxyphenethylamine', 'effects': ['euphoria', 'increased energy', 'space distortion', 'time distortion', 'trouble concentrating', 'trouble thinking', 'increased blood pressure', 'fast heartbeat', 'intense nausea', 'vomiting'], 'signs': ['overdoses are rare.'], 'appearance': ['powder', 'tablet', 'capsule', 'liquid'], 'category': 'psychedelic'},
+    {'name': 'NBOMes', 'fullName': '25-NB', 'effects': ['visual hallucinations', 'auditory hallucinations', 'euphoria', 'sweating', 'confusion', 'memory issues', 'increased blood pressure', 'fast heartbeat', 'paranoia'], 'signs': ['intense confusion', 'agitation', 'seizure', 'kidney failure', 'nausea', 'vomiting', 'overheating', 'coma'], 'appearance': ['blotters', 'liquid', 'powder', 'pill'], 'category': 'psychedelic'},
+    {'name': 'Salvia', 'fullName': 'Salvia divinorum', 'effects': ['anxiety', 'amnesia', 'hallucinations', 'sedation', 'low energy', 'pain relief', 'confusion', 'delusion', 'visual distortions', 'laughter', 'time distortion'], 'signs': ['overdoses are rare.'], 'appearance': ['fresh leaves', 'dried leaves'], 'category': 'psychedelic'},
+    {'name': 'Ayahuasca', 'fullName': 'Banisteriopsis caapi', 'effects': ['nausea', 'vomiting', 'euphoria', 'increased blood pressure', 'fast heartbeat', 'visual hallucinations', 'auditory hallucinations', 'anxiety'], 'signs': ['Cannot overdose'], 'appearance': ['reddish-brown brewed drink'], 'category': 'psychedelic'},
+    {'name': 'Ketamine', 'fullName': 'Ketamine', 'effects': ['euphoria', 'relaxation', 'auditory hallucinations', 'visual hallucinations', 'fast heartbeat', 'increased blood pressure',  'anxiety' , 'vomiting'], 'signs': ['paralyzation', 'convulsions'], 'appearance': ['clear liquid', 'off white powder'], 'category': 'dissociative'},
+    {'name': 'MXE', 'fullName': 'Methoxetamine', 'effects': ['dissociation', 'hallucinations', 'euphoria', 'slurring or difficulty speaking', 'disorientation'], 'signs': ['paralyzation', 'convulsions'], 'appearance': ['off-white powder', 'beige powder', 'yellow powder', 'liquid'], 'category': 'dissociative'},
+    {'name': 'Marijuana', 'fullName': 'Cannabis', 'effects': ['relaxation', 'euphoria', 'increased appetite', 'slower reflexes', 'bloodshot eyes', 'fast heartbeat'], 'signs': ['chest pain', 'rapid heartbeat', 'nausea', 'vomiting', 'auditory hallucinations', 'visual hallucinations', 'trouble breathing'], 'appearance': ['blunts', 'dried leaves', 'edibles'], 'category': 'cannabinoids'},
+    {'name': 'BHO', 'fullName': 'Butane hash oil', 'effects': ['relaxation', 'euphoria', 'laughter', 'excitement', 'increased appetite'], 'signs': ['dissociation', 'anxiety', 'panic', 'confusion', 'paranoia'], 'appearance': ['transparent golden', 'light brown', 'tan', 'black'], 'category': 'cannabinoids'},
+    {'name': 'CBD', 'fullName': 'Cannabidiol', 'effects': ['diarrhea', 'drowsiness', 'fatigue', 'dry mouth', 'vomiting'], 'signs': ['overdoses are rare'], 'appearance': ['colorless liquid'], 'category': 'cannabinoids'},
+    {'name': 'Synthetic CBD', 'fullName': 'Synthetic cannabinoids', 'effects': ['relaxation', 'euphoria', 'loss of coordination', 'fast heartbeat', 'irregular heartbeat', 'racing thoughts', 'agitation', 'anxiety', 'paranoia', 'psychosis', 'aggressive behavior', ' violent behaviour', 'chest pain', 'raised blood pressure'], 'signs': ['chest pain', 'delusional behaviour', 'vomiting', 'breathing difficulties', 'overheating', 'breakdown of muscle tissue', 'acute kidney injury', 'seizures', 'stroke', 'death'], 'appearance': ['powders', 'herbs'], 'category': 'cannabinoids'},
+    {'name': 'Laughing Gas', 'fullName': 'Nitrous Oxide', 'effects': ['euphoria', 'numbness of the body', 'sedation', 'giddiness', 'uncontrolled laughter', 'uncoordinated movements'], 'signs': ['blurred vision', 'confusion', 'dizziness', 'sweating', 'fatigue', 'sudden death'], 'appearance': ['colorless gas', 'metal container'], 'category': 'dissociative'},
+    {'name': 'OxyContin', 'fullName': 'Oxycodone', 'effects': ['pain relief', 'dizziness', 'tiredness', 'confusion', 'difficulty concentrating', 'euphoria', 'restlessness', 'stiff muscles', 'constipation', 'dry mouth', 'stomachache', 'nausea', 'difficulty urinating', 'slow pulse', 'sweating', 'flushing', 'itching'], 'signs': ['chest pain or discomfort', 'small pupils', 'decreased awareness or responsiveness', 'extreme drowsiness and loss of consciousness', 'no muscle tone or movement', 'slow or irregular heartbeat'], 'appearance': ['capsule', 'liquid', 'tablet'], 'category': 'opioids'},
+    {'name': 'Opium', 'fullName': 'Lachryma papaveris', 'effects': ['euphoria', 'relaxation', 'slow breathing', 'slow heartbeat', 'impaired reflexes', 'temporary constipation', 'loss of appetite'], 'signs': ['very slow breathing', 'loss of consciousness', 'tiny pupils'], 'appearance': ['liquid', 'powder'], 'category': 'opioids'},
+    {'name': 'Methadone', 'fullName': 'Methadone', 'effects': ['sweating', 'difficulty urinating', 'loss of appetite', 'nausea', 'vomiting', 'abdominal cramps', 'constipation', 'aching muscles', 'irregular periods', 'rashes', 'itching', 'fatigue', 'confusion'], 'signs': ['slow breathing', 'slack muscles', 'seizures', 'drowsiness', 'unconsciousness', 'cold skin', 'blueish skin', 'coma'], 'appearance': ['pills', 'liquid'], 'category': 'opioids'},
+    {'name': 'Cocaine', 'fullName': 'Cocaine', 'effects': ['loss of appetite', 'dilated pupils', 'increase in body temperature', 'fast heartbeat', 'euphoria'], 'signs': ['dizziness', 'hallucinations', 'nausea', 'vomiting', 'tremors', 'chest pain'], 'appearance': ['powder', 'white', 'light pink', 'rock-like', 'beige-like'], 'category': 'stimulant'},
+    {'name': 'Heroin', 'fullName': 'Diacetylmorphine', 'effects': ['euphoria', 'pain relief', 'relaxation', 'drowsiness', 'clumsiness', 'confusion', 'dissociation', 'slurred speech', 'slow speech', 'slow breathing', 'slow heartbeat', 'dry mouth', 'tiny pupils', 'reduced appetite', 'vomiting'], 'signs': ['trouble concentrating', 'extreme drowsiness', 'falling asleep', 'tiny pupils', 'difficulty urinating', 'itchiness', 'low blood pressure', 'irregular heartbeat', 'cold skin', 'slow breathing', 'hypothermia', 'death'], 'appearance': ['fine white powder', 'off-white granules', 'light brown rock'], 'category': 'opioids'},
+    {'name': 'Fentanyl', 'fullName': 'Fetanyl', 'effects': ['euphoria', 'pain relief', 'nausea', 'vomiting', 'constipation', 'diarrhea', 'reduced appetite', 'indigestion', 'drowsiness', 'confusion', 'weakness', 'fatigue', 'dizziness', 'headache', 'slurred speech', 'impaired balance', 'slow heartbeat', 'decreased blood pressure', 'rash'], 'signs': ['chest pain', 'slow breathing', 'seizure', 'passing out', 'coma', 'death'], 'appearance': ['liquid', 'skin patches', 'sprays', 'lozenges'], 'category': 'opioids'},
+    {'name': 'Buprenorphine', 'fullName': 'Buprenorphine', 'effects': ['constipation', 'headache', 'sweating', 'drowsiness', 'loss of appetite', 'nausea', 'vomiting', 'abdominal pain', 'skin rashes', 'tooth decay'], 'signs': ['overdoses are rare.'], 'appearance': ['tablets', 'film'], 'category': 'opioids'}
+]
+  
 };
 
 document.getElementById('emergencyButtonDiv').addEventListener('click', function f(e) {
@@ -60,9 +75,9 @@ for (let i = 0; i < drugs.drugs.length; i++) {
 }
 
 function buildInfoDiv(drug) {
-  var marginMultiplier;
-  for (marginMultiplier = 0; marginMultiplier < drugs.drugs.length; marginMultiplier++) {
-    if (drugs.drugs[marginMultiplier].name == drug.name) {
+  var nodeLocation;
+  for (nodeLocation = 0; nodeLocation < drugs.drugs.length; nodeLocation++) {
+    if (drugs.drugs[nodeLocation].name == drug.name) {
       break;
     }
   }
@@ -93,7 +108,7 @@ function buildInfoDiv(drug) {
   caption.innerHTML = `scientific name: <i>${drug.fullName}</i>`;
 
   wikiLink.innerText = `Wikipedia link to ${drug.name}.`;
-  wikiLink.href = `https://en.wikipedia.org/wiki/${drug.name}`;
+  wikiLink.href = `https://en.wikipedia.org/wiki/${drug.fullName}`;
   wikiLink.target = '_blank';
   wikiLink.rel = 'noopener noreferrer';
 
@@ -146,7 +161,7 @@ function buildInfoDiv(drug) {
     }
   });
 
-  document.getElementById('bodyDiv').insertBefore(container, document.getElementById('bodyDiv').childNodes[marginMultiplier])
+  document.getElementById('bodyDiv').insertBefore(container, document.getElementById('bodyDiv').childNodes[nodeLocation])
 }
 
 let searchDrugs = document.getElementById('searchBar');

@@ -1,12 +1,21 @@
+:root {
+  --background-color: #c6edf0;
+  --accent-color: #7bb9c8;
+  --text-accent-color: #112149;
+  --text-color: #112149;
+  --emergency-color: #da8048;
+  --emergency-text-color: white;
+
+  --title-font-size: 5vh;
+  --caption-font-size: 4vh;
+}
+
 .article {
-  position: relative;
   width: 70vw;
   border: 10px solid var(--accent-color);
-  border-radius: 5px;
   height: 20vw;
   display: inline-block;
   margin: 5px;
-  vertical-align: top;
   text-align: left;
   padding-left: 10px;
 }
@@ -19,7 +28,7 @@
   z-index: 3;
 	position: absolute;
 	width: 90vw;
-  height: 600px;
+  height: 90vw;
   overflow: scroll;
 	text-align: center;
   background-color: var(--background-color);
@@ -48,7 +57,7 @@
 .article > img {
   height: 20vw;
   float: right;
-  margin-top: -17.75vw;
+  margin-top: -17.3vw;
 }
 
 .divTitle {
@@ -67,4 +76,10 @@
 
 .hotline > .callLink {
   font-size: 2.5vw;
+}
+
+#navbar {
+  height: 7vw;
+  padding-top: 1vw;
+  font-size: 4vw;
 }
