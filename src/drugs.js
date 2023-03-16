@@ -99,6 +99,7 @@ function buildInfoDiv(drug) {
   let signs = document.createElement('UL');
   let appearanceLabel = document.createElement('P');
   let appearances = document.createElement('UL');
+  let cite = document.createElement('P');
 
   container.id = 'infoDiv';
 
@@ -115,6 +116,8 @@ function buildInfoDiv(drug) {
   wikiLink.href = `https://en.wikipedia.org/wiki/${drug.fullName}`;
   wikiLink.target = '_blank';
   wikiLink.rel = 'noopener noreferrer';
+  
+  cite.innerHTML = '\“Drug Facts.\” <i>Alcohol and Drug Foundation</i>, 23 April 2021, <a href=\'https://adf.org.au/drug-facts/\'>https://adf.org.au/drug-facts/</a>. Accessed 2 February 2023.';
 
   effectsLabel.innerText = `The side effects of taking ${drug.name} are as follows:`;
     
