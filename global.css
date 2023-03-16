@@ -109,6 +109,12 @@ ul, ol {
   top: 0;
 }
 
+#emergencyNotif {
+  background-color: #ff3838;
+  width: 100%;
+  top: 0;
+}
+
 a {
   color: var(--text-accent-color);
 }
