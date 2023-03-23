@@ -104,9 +104,8 @@
 
 .indexQuote {
   font-style: italic;
-  margin-left: -57vw;
   color: var(--text-color);
-  font-size: 1.5vw;
+  font-size: 3vw;
 }
 
 .indexButtons {
