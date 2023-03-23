@@ -80,7 +80,7 @@
 .indexQuote {
   font-style: italic;
   margin-left: -57vw;
-  color: var(--emergency-color);
+  color: var(--text-color);
   font-size: 1.5vw;
 }
 
