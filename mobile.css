@@ -87,3 +87,28 @@
   padding-top: 1vw;
   font-size: 4vw;
 }
+
+#indexHeaderDiv {
+  text-align: center;
+  width: 33vw;
+  font-size: 2.75vw;
+  margin-top: 3vw;
+  margin-left: 5vw;
+}
+
+#indexPoppy {
+  position: static;
+  width: 17vw;
+  margin-top: -15vw;
+}
+
+.indexQuote {
+  font-style: italic;
+  margin-left: -57vw;
+  color: var(--text-color);
+  font-size: 1.5vw;
+}
+
+.indexButtons {
+  margin-top: -30vw;
+}
