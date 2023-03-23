@@ -11,9 +11,9 @@
 }
 
 .article {
-  width: 20vh;
-  border: 2px solid var(--accent-color);
-  height: 35vh;
+  width: 33vh;
+  border: 10px solid var(--accent-color);
+  height: 37vh;
   margin: 5px;
   font-size: 1.5vh;
 }
@@ -23,7 +23,6 @@
 	position: absolute;
 	width: 90vh;
   height: 90vh;
-  height: 600px;
   overflow: scroll;
 	text-align: center;
   top: 50%;
@@ -44,7 +43,7 @@
 }
 
 #emergencyButtonDiv {
-  margin: 85vh 65vw;
+  margin: 80vh 65vw;
 }
 
 .divTitle {
@@ -52,9 +51,39 @@
 }
 
 .article > img {
-  width: 18vh;
+  width: 30vh;
 }
 
 .noMobile {
-  font-size: 1.5vh;
+  
+}
+
+#searchBar {
+  width: 50%;
+  height: 30px;
+}
+
+#indexHeaderDiv {
+  text-align: center;
+  width: 33vw;
+  font-size: 2.75vw;
+  margin-top: 3vw;
+  margin-left: 5vw;
+}
+
+#indexPoppy {
+  position: static;
+  width: 17vw;
+  margin-top: -15vw;
+}
+
+.indexQuote {
+  font-style: italic;
+  margin-left: -57vw;
+  color: var(--emergency-color);
+  font-size: 1.5vw;
+}
+
+.indexButtons {
+  margin-top: -30vw;
 }

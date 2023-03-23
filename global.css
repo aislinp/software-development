@@ -6,7 +6,7 @@
   --emergency-color: #da8048;
   --emergency-text-color: white;
 
-  --title-font-size: 5vh;
+  --title-font-size: 6vh;
   --caption-font-size: 4vh;
 }
 
@@ -42,7 +42,7 @@ h1, .divTitle {
 }
 
 
-h1 > a {
+.noDecoration {
   text-decoration: none;
 }
 
@@ -51,8 +51,11 @@ h1 > a {
 }
 
 #searchBar {
-  width: 80%;
   border: 2px solid var(--accent-color);
+}
+
+#searchBar::placeholder {
+  color: #cfcfcf;
 }
 
 .textButton {
@@ -80,7 +83,6 @@ h1 > a {
 #emergencyButton {
   display: table-cell;
   color: var(--emergency-text-color);
-  text-decoration: none;
   font-size: 2.4vh;
   vertical-align: middle;
 }
@@ -127,9 +129,19 @@ a {
 
 .abutton {
   margin: 10px;
-  text-decoration: none;
 }
 
 .cite {
   font-size: 1vh;
 }
+
+.helpDiv {
+  border: 10px solid var(--accent-color);
+  width: 30vh;
+  height: 30vh;
+  position: relative;
+  border-radius: 5px;
+  vertical-align: top;
+  display: inline-block;
+}
+

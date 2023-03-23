@@ -51,7 +51,11 @@
 }
 
 #emergencyButtonDiv {
-  margin: 78vh 65vw;
+  margin: 70vh 65vw;
+}
+
+#searchBar {
+  width: 80%;
 }
 
 .article > img {
